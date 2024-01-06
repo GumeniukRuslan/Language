@@ -1,0 +1,36 @@
+@import-normalize; /* bring in normalize.css styles */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+@font-face {
+  font-family: 'NeueMachina';
+  font-weight: normal;
+  src: url('./assets/fonts/drive-download-20221114T115223Z-001/NeueMachina-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NeueMachina';
+  font-weight: lighter;
+  src: url('./assets/fonts/drive-download-20221114T115223Z-001/NeueMachina-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NeueMachina';
+  font-weight: bold;
+  src: url('./assets/fonts/drive-download-20221114T115223Z-001/NeueMachina-Ultrabold.otf') format('opentype');
+}
+body {
+  margin: 0;
+  font-family: 'NeueMachina',
+    sans-serif, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
