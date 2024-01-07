@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
   justify-content: end;
   background-color: transparent;
   position: absolute;
-  z-index: 999;
+  z-index: 500;
   right: 0;
   top: 15px;
 

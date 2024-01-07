@@ -1,12 +1,12 @@
 import out from '../../assets/icons/Out.svg'
 import { StyledHeader, StyledOutBtn } from './MainHeader.js'
 
-const MainHeader = () => {
+const MainHeader = ({openModal}) => {
 
   return (
     <>
       <StyledHeader>
-        <StyledOutBtn type="button"> Войти <img src={out} alt="" /></StyledOutBtn>
+        <StyledOutBtn onClick={openModal} type="button"> Войти <img src={out} alt="" /></StyledOutBtn>
       </StyledHeader>
     </>
   )

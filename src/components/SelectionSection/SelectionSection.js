@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledSelectionSection = styled.section`
   margin-top: 108px;
   margin-bottom: 108px;
+  padding: 0px 15px;
 `;
 
 export const SelectionHeader = styled.h2`
@@ -24,4 +25,5 @@ export const Motivation = styled.p`
   text-align: left;
   color: #807E7E;
   max-width: 620px;
+  padding: 0px 15px;
 `;

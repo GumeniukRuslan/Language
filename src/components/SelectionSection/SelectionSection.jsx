@@ -1,3 +1,4 @@
+import LangSwiper from "../Swiper/Swiper"
 import { Motivation, SelectionHeader, StyledSelectionSection } from "./SelectionSection"
 
 
@@ -7,11 +8,14 @@ const SelectionSection = () => {
     <>
       <StyledSelectionSection>
         <SelectionHeader>Выберите тот язык,</SelectionHeader>
-        <div></div>
+        <LangSwiper/>
         <SelectionHeader style={{textAlign: 'right'}}>Который хотели бы изучать</SelectionHeader>
       </StyledSelectionSection>
-      <SelectionHeader>Стимул к учебе</SelectionHeader>
-      <Motivation>Обучение проходит в интерактивном
+      
+      
+      <Motivation>
+        <SelectionHeader>Стимул к учебе</SelectionHeader>
+        Обучение проходит в интерактивном
         игровом формате, что поможет лучше 
         запоминать материал
       </Motivation>
