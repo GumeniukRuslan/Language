@@ -40,3 +40,8 @@ code {
 .swiper-button-prev{
   color: #ffffffb3 !important;
 }
+
+p ul ol {
+  margin: 0;
+  padding: 0;
+}

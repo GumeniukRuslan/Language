@@ -2,11 +2,9 @@ import styled from 'styled-components';
 
 export const StyledLanguageHeader = styled.header`
   display: flex;
-  justify-content: space-between;
-  background-color: purple;
-  position: fixed;
-  /* padding: 20px; */
-  width: 100%;
+
+  padding: 12px 20px;
+
 
 `;
 
@@ -23,6 +21,7 @@ export const StyledLanguageOutBtn = styled.button`
   color: white;
   cursor: pointer;
   padding: 0;
+  margin-left: auto;
 `
 export const StyledLanguageMenuBtn = styled.button`
   background: none;
@@ -41,7 +40,7 @@ export const StyledLanguageMenuBtn = styled.button`
 
 export const LanguageContainer = styled.div`
   display: flex;
-  
+  margin-right: 174px;
   align-items: center;
   gap: 40px;
 `
@@ -66,6 +65,7 @@ export const UserName = styled.p`
   font-size: 24px;
   font-weight: 400;
   color: #713BE4;
+  margin: 0;
 
 `
 

@@ -1,3 +1,4 @@
+import EnglishLevelsSection from "../components/EnglishLevelsSection/EnglishLevelsSection.jsx"
 import LanguageHeader from "../components/LanguageHeader/LanguageHeader.jsx"
 
 
@@ -8,7 +9,8 @@ const English = () => {
     <>
       <LanguageHeader />
       <main>
-    
+        <EnglishLevelsSection />
+        
       </main>
     </>
     
