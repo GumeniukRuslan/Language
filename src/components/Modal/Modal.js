@@ -1,18 +1,6 @@
 import styled from 'styled-components';
 import { IoMdClose } from "react-icons/io";
 
-export const Backdrop = styled.div`
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 900;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(161,21,207, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 export const StyledModal = styled.div`
   background-color: white;
   display: flex;

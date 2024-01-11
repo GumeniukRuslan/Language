@@ -10,9 +10,20 @@ const Home = () => {
   const [showModal, setShowModal] = useState(false);
 
   function openModal() { 
+    window.addEventListener('keydown', closeModalOnEsc)
     return setShowModal(true)
   }
-  function closeModal() { 
+
+  function closeModalOnEsc(e) {
+    if (e.key === 'Escape') {
+      console.log(e.key)
+      window.removeEventListener('keydown', closeModal)
+      return setShowModal(false)
+    }
+  }
+
+  function closeModal() {
+    window.removeEventListener('keydown', closeModal)
     return setShowModal(false)
   }
 

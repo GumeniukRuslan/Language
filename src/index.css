@@ -41,7 +41,7 @@ code {
   color: #ffffffb3 !important;
 }
 
-p ul ol {
+p, ul, ol {
   margin: 0;
   padding: 0;
 }

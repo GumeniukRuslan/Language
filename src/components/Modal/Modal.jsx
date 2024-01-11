@@ -1,16 +1,15 @@
 import { useState } from "react";
-import { Backdrop, ChangeModalBtn, CloseBtn, GoogleBtn, InputContainer, LeftPart, ModalAddIndfo, ModalForm, ModalHeaders, RightPart, StyledClose, StyledInput, StyledModal, SubmitBtn } from "./Modal"
+import { ChangeModalBtn, CloseBtn, GoogleBtn, InputContainer, LeftPart, ModalAddIndfo, ModalForm, ModalHeaders, RightPart, StyledClose, StyledInput, StyledModal, SubmitBtn } from "./Modal"
+import ModalBackdrop from "../ModalBackdrop/ModalBackdrop.jsx";
 
 
 const Modal = ({ closeModal }) => {
   
   const [changeModal, setChangeModal] = useState(true);
 
-
-
   return (
     <>
-      <Backdrop >
+      <ModalBackdrop >
         {changeModal ? <StyledModal>
           <CloseBtn  type="button"><StyledClose onClick={closeModal}/></CloseBtn>
           <LeftPart>
@@ -98,7 +97,7 @@ const Modal = ({ closeModal }) => {
         </StyledModal>
         }
         
-      </Backdrop>
+      </ModalBackdrop>
     </>
   )
 }

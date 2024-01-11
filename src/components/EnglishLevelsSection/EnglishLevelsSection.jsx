@@ -12,7 +12,7 @@ import number9 from "../../assets/images/Цифра9.png"
 import number10 from "../../assets/images/Цифра10.png"
 import lock from "../../assets/images/замок1.png"
 
-const EnglishLevelsSection = () => {
+const EnglishLevelsSection = ({openModal}) => {
 
   return (
     <>
@@ -20,7 +20,7 @@ const EnglishLevelsSection = () => {
         <StyledEnglishLevelThemeTitle>Знакомство</StyledEnglishLevelThemeTitle>
         <LevelsContainer>
           <LevelsList>
-            <LevelItem><LevelBtn type="button"><NumberImg src={number1} alt="" /> </LevelBtn></LevelItem>
+            <LevelItem><LevelBtn type="button" onClick={openModal}><NumberImg src={number1} alt="" /> </LevelBtn></LevelItem>
             <LevelItem><LevelBtn type="button"><NumberImg src={number2} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
             <LevelItem><LevelBtn type="button"><NumberImg src={number3} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
             <LevelItem><LevelBtn type="button"><NumberImg src={number4} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
