@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledFooter = styled.footer`
   padding: 21px 10px;
   border-top: 1px solid #713BE4;
+  margin-top: 95px;
 `;
 export const FooterList = styled.ul`
   display: flex;
