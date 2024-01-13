@@ -8,7 +8,7 @@ export const StyledEnglishLevelMeeting = styled.section`
 
 export const StyledEnglishLevelThemeTitle = styled.h2`
   font-family: NeueMachina;
-  font-size: 45px;
+  font-size: 32px;
   font-weight: 300;
   line-height: 43px;
   color: #713BE4;
@@ -16,7 +16,7 @@ export const StyledEnglishLevelThemeTitle = styled.h2`
   margin-bottom: 60px;
   margin-top: 0px;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 6px;
 `;
 
 export const Meetingimg = styled.img`
@@ -54,10 +54,10 @@ export const LevelBtn = styled.button`
 `;
 
 export const NumberImg = styled.img`
- width: 118px;
+ width: 97px;
 `;
 export const LockImg = styled.img`
- width: 83px;
+ width: 70px;
  position: absolute;
  top: 50%;
  left: 50%;

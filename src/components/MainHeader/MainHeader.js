@@ -20,7 +20,7 @@ export const StyledOutBtn = styled.button`
   align-items: center;
   gap: 8px;
   font-family: NeueMachina;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 31px;
   color: white;

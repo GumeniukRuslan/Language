@@ -42,22 +42,24 @@ export const RightPart = styled.div`
 `;
 export const ModalHeaders = styled.h2`
   font-family: NeueMachina;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 33px;
+  margin-bottom: 99px;
 `;
 export const ModalAddIndfo = styled.p`
   font-family: NeueMachina;
   font-size: 18px;
   font-weight: 300;
   line-height: 23px;
+  margin-bottom: 30px;
 `;
 export const ChangeModalBtn = styled.button`
   background: linear-gradient(171.92deg, #713BE4 6.22%, #E800C3 93.8%),
     linear-gradient(0deg, #E3CECE, #E3CECE);
   color: #F2EDE7;
   font-family: NeueMachina;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 23px;
   border: none;
@@ -69,7 +71,7 @@ export const ChangeModalBtn = styled.button`
 export const GoogleBtn = styled.button`
   background-color: #E7E7E7;
   font-family: NeueMachina;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 23px;
   border: none;
@@ -80,7 +82,7 @@ export const GoogleBtn = styled.button`
   margin-bottom: 40px;
 `;
 export const ModalForm = styled.form`
-  margin-top: 20px;
+  margin-top: 18px;
   align-self: flex-start;
   display: flex;
   flex-direction: column;
@@ -95,7 +97,7 @@ export const InputContainer = styled.div`
 `;
 export const StyledInput = styled.input`
   border: none;
-  border-radius: 24px;
+  border-radius: 18px;
   background-color: #E7E7E7;
   padding: 12px;
   
@@ -104,7 +106,7 @@ export const SubmitBtn = styled.button`
   background-color: #713BE4;
   color: #F2EDE7;
   font-family: NeueMachina;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 23px;
   border: none;

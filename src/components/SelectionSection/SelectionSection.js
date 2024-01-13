@@ -8,7 +8,7 @@ export const StyledSelectionSection = styled.section`
 
 export const SelectionHeader = styled.h2`
   font-family: NeueMachina;
-  font-size: 46px;
+  font-size: 32px;
   font-weight: 300;
   line-height: 44px;
   letter-spacing: 0.09em;
@@ -20,7 +20,7 @@ export const SelectionHeader = styled.h2`
 `;
 export const Motivation = styled.p`
   font-family: NeueMachina;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 31px;
   letter-spacing: 0em;
@@ -30,5 +30,4 @@ export const Motivation = styled.p`
   padding: 0px 15px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
 `;

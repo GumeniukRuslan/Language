@@ -21,7 +21,7 @@ margin-left: 250px;
 `
 export const HeroHeader = styled.h1`
 font-family: NeueMachina;
-font-size: 90px;
+font-size: 70px;
 font-weight: 400; 
 margin-bottom: 50px;
 `

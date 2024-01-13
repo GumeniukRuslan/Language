@@ -53,7 +53,7 @@ export const Flag = styled.img`
 `
 export const LanguageName = styled.p`
   font-family: NeueMachina;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 300;
   color: #713BE4;
 

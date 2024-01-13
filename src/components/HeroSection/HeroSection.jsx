@@ -6,7 +6,7 @@ const HeroSection = () => {
       <StyledHeroSection>
         <HeroHeaderConrainer>
           <HeroHeader><HeroHeaderWord>Language</HeroHeaderWord> dictionary</HeroHeader>
-          <AdditionalHeroHeader><HeroHeaderWord>- Это</HeroHeaderWord>  возможность узнать новые языки</AdditionalHeroHeader>
+          <AdditionalHeroHeader><HeroHeaderWord>- Это возможность</HeroHeaderWord> узнать новые языки</AdditionalHeroHeader>
         </HeroHeaderConrainer>
       
       </StyledHeroSection>
