@@ -17,7 +17,7 @@ const Modal = ({ closeModal }) => {
               Регистрация
             </ModalHeaders>
             <ModalAddIndfo>
-              Ещё нет аккаунта?
+              Ещё нет аккаунт?
             </ModalAddIndfo>
             <ChangeModalBtn onClick={() => setChangeModal(false)}>
               Зарегистрироваться

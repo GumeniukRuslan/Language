@@ -11,26 +11,31 @@ import number8 from "../../assets/images/Цифра8.png"
 import number9 from "../../assets/images/Цифра9.png"
 import number10 from "../../assets/images/Цифра10.png"
 import lock from "../../assets/images/замок1.png"
+import Container from "../Container/Container.jsx"
 
 const EnglishLevelsSection = ({openModal}) => {
 
   return (
     <>
       <StyledEnglishLevelMeeting>
-        <StyledEnglishLevelThemeTitle>Знакомство</StyledEnglishLevelThemeTitle>
-        <LevelsContainer>
-          <LevelsList>
-            <LevelItem><LevelBtn type="button" onClick={openModal}><NumberImg src={number1} alt="" /> </LevelBtn></LevelItem>
-            <LevelItem><LevelBtn type="button"><NumberImg src={number2} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
-            <LevelItem><LevelBtn type="button"><NumberImg src={number3} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
-            <LevelItem><LevelBtn type="button"><NumberImg src={number4} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
-            <LevelItem><LevelBtn type="button"><NumberImg src={number5} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
-          </LevelsList>
-          <Meetingimg src={meetingImg} alt="" />
-        </LevelsContainer>
+        <Container>
+          <StyledEnglishLevelThemeTitle>Знакомство</StyledEnglishLevelThemeTitle>
+          <LevelsContainer>
+            <LevelsList>
+              <LevelItem><LevelBtn type="button" onClick={openModal}><NumberImg src={number1} alt="" /> </LevelBtn></LevelItem>
+              <LevelItem><LevelBtn type="button"><NumberImg src={number2} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
+              <LevelItem><LevelBtn type="button"><NumberImg src={number3} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
+              <LevelItem><LevelBtn type="button"><NumberImg src={number4} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
+              <LevelItem><LevelBtn type="button"><NumberImg src={number5} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
+            </LevelsList>
+            <Meetingimg src={meetingImg} alt="" />
+          </LevelsContainer>
+        </Container>
       </StyledEnglishLevelMeeting>
+
       <StyledEnglishLevelTraveling>
-        <StyledEnglishLevelThemeTitle>Путешествие</StyledEnglishLevelThemeTitle>
+        <Container>
+          <StyledEnglishLevelThemeTitle>Путешествие</StyledEnglishLevelThemeTitle>
           <LevelsTravelList>
             <LevelTravelItem><LevelBtn type="button"><NumberImg src={number6} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
             <LevelTravelItem><LevelBtn type="button"><NumberImg src={number7} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
@@ -38,6 +43,7 @@ const EnglishLevelsSection = ({openModal}) => {
             <LevelTravelItem><LevelBtn type="button"><NumberImg src={number9} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
             <LevelTravelItem><LevelBtn type="button"><NumberImg src={number10} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
           </LevelsTravelList>
+        </Container>
       </StyledEnglishLevelTraveling>
     </>
     

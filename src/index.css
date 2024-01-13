@@ -39,10 +39,16 @@ code {
   box-sizing: border-box;
 }
 
+.swiper-button-next{
+  padding-right: 40px;
+}
+
 .swiper-button-next,
 .swiper-button-prev{
+  
   color: #ffffffb3 !important;
 }
+
 
 p, ul, ol {
   margin: 0;
@@ -51,3 +57,4 @@ p, ul, ol {
 h1, h2, h3, h4, h5, h6{
   margin: 0;
 }
+

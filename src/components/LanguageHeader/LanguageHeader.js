@@ -2,10 +2,9 @@ import styled from 'styled-components';
 
 export const StyledLanguageHeader = styled.header`
   display: flex;
-
   padding: 12px 20px;
-
-
+  max-width: 1600px;
+  margin: 0 auto;
 `;
 
 export const StyledLanguageOutBtn = styled.button`

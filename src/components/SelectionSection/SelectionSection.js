@@ -15,6 +15,8 @@ export const SelectionHeader = styled.h2`
   text-align: left;
   color: #713BE4;
   text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-top: 15px;
 `;
 export const Motivation = styled.p`
   font-family: NeueMachina;
@@ -26,4 +28,7 @@ export const Motivation = styled.p`
   color: #807E7E;
   max-width: 620px;
   padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 `;

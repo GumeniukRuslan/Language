@@ -9,9 +9,10 @@ import LangItem from '../LangItem/LangItem.jsx';
 const LangSwiper = () => { 
   return (
     <Swiper
+          style={{width: '100%'}}
           modules={[Navigation, Autoplay]}
           spaceBetween={14}
-          slidesPerView={1}
+          slidesPerView={4}
           loop={true}
           navigation
           speed={1300}

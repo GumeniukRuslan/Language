@@ -9,8 +9,8 @@ export const StyledHeader = styled.header`
   z-index: 500;
   right: 0;
   top: 15px;
-
-
+  max-width: 1600px;
+  margin: 0 auto;
 `;
 
 export const StyledOutBtn = styled.button`

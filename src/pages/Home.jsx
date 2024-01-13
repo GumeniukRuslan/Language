@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection/HeroSection.jsx"
 import SelectionSection from "../components/SelectionSection/SelectionSection.jsx"
 import Footer from "../components/Footer/Footer.jsx"
 import Modal from "../components/Modal/Modal.jsx"
+import Container from "../components/Container/Container.jsx"
 
 const Home = () => {
 
@@ -32,10 +33,12 @@ const Home = () => {
       <MainHeader openModal={openModal}/>
       <main>
         <HeroSection  />
-        <SelectionSection />
-        <Footer />
-        {showModal && <Modal closeModal={closeModal} />}
+        <Container>
+          <SelectionSection />
+          <Footer />
+        </Container>
         
+        {showModal && <Modal closeModal={closeModal} />}
       </main>
     </>
     
