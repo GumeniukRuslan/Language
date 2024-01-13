@@ -3,6 +3,7 @@ import firstModal from '../../assets/images/Level1FirstModal.png'
 import secondModalLeft from '../../assets/images/SecondTaskLeft.png'
 import secondModalRight from '../../assets/images/SecondTaskRight.png'
 import videoBcg from '../../assets/images/VideoTaskBcg.png'
+import fourthTaskBcg from '../../assets/images/FourthTaskBcg.png'
 import { IoMdClose } from 'react-icons/io';
 
 export const CloseTaskBtn = styled.button`
@@ -154,11 +155,6 @@ export const MatchItem = styled.li`
 
 //ThirdTask --------------------------------------------------------]
 
-// Width
-// 317.23px
-// Height
-// 236.76px
-
 export const VideoLevelModal = styled.div`
   padding: 20px;
   width: 916px;
@@ -228,5 +224,79 @@ export const VideoTaskFormSubmit = styled.button`
   padding: 0px 10px;
   cursor: pointer;
   background: linear-gradient(180deg, #CB15DB 0%, #713BE4 100%);
+`;
 
+// FourthTask-----------------------------------------------------------
+
+export const TranslationLevelModal = styled.div`
+  padding: 20px;
+  width: 916px;
+  height: 558px;
+  position: relative;
+  background: url(${fourthTaskBcg}), conic-gradient(from 180deg at 50% 50%, #FEBBBA 0deg, #3BC6E4 264.52deg, #AE8BF1 306.91deg, #FEBBBA 360deg), linear-gradient(0deg, #C379F5, #C379F5);
+;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #B0C7E2;
+  border: 9px solid #C379F5;
+  border-radius: 8px;
+`;
+
+export const TranslationTaskName = styled.h2`
+  font-family: NeueMachina;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+`;
+
+export const TranslationTaskDescription = styled.h3`
+  font-family: NeueMachina;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 17px;
+  color: black;
+  margin-bottom: 18px;
+`;
+export const TranslationTaskGoal = styled.p`
+  font-family: NeueMachina;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 17px;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+`;
+
+export const TranslationTaskForm = styled.form`
+  display: flex;
+  margin-top: 2px;
+  gap: 11px;
+`;
+export const TranslationTaskFormInput = styled.input`
+  border: 3px solid #BA9AFF;
+  border-radius: 10px;
+  width: 100%;
+  padding: 1px 17px;
+  color: #713BE4;
+  font-family: NeueMachina;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 17px;
+`;
+export const TranslationTaskFormSubmit = styled.button`
+  border: none;
+  border-radius: 24px;
+  font-family: NeueMachina;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 16px;
+  color: white;
+  padding: 0px 10px;
+  cursor: pointer;
+  background: linear-gradient(180deg, #CB15DB 0%, #713BE4 100%);
 `;
