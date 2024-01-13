@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import firstModal from '../../assets/images/Level1FirstModal.png'
 import secondModalLeft from '../../assets/images/SecondTaskLeft.png'
 import secondModalRight from '../../assets/images/SecondTaskRight.png'
+import videoBcg from '../../assets/images/VideoTaskBcg.png'
 import { IoMdClose } from 'react-icons/io';
 
 export const CloseTaskBtn = styled.button`
@@ -149,4 +150,83 @@ export const MatchItem = styled.li`
   border-radius: 8px;
   background-color: #D9D9D9;
   color: #713BE4;
+`;
+
+//ThirdTask --------------------------------------------------------]
+
+// Width
+// 317.23px
+// Height
+// 236.76px
+
+export const VideoLevelModal = styled.div`
+  padding: 20px;
+  width: 916px;
+  height: 558px;
+  position: relative;
+  background: url(${videoBcg});
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: #B0C7E2;
+  border: 9px solid #C379F5;
+  border-radius: 8px;
+`;
+export const VideoTaskName = styled.h2`
+  font-family: NeueMachina;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  display: block;
+  color: #713BE4;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+`;
+export const VideoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 477px;
+`;
+export const VideoTaskDescription = styled.h3`
+  font-family: NeueMachina;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #713BE4;
+`;
+export const StyledVideo = styled.video`
+  width: 318px;
+  height: 237px;
+  background-color: black;
+`;
+
+export const VideoTaskForm = styled.form`
+  display: flex;
+  margin-top: 2px;
+  gap: 11px;
+`;
+export const VideoTaskFormInput = styled.input`
+  border: 3px solid #BA9AFF;
+  border-radius: 10px;
+  width: 100%;
+  padding: 1px 17px;
+  color: #713BE4;
+  font-family: NeueMachina;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 17px;
+`;
+export const VideoTaskFormSubmit = styled.button`
+  border: none;
+  border-radius: 24px;
+  font-family: NeueMachina;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 16px;
+  color: white;
+  padding: 0px 10px;
+  cursor: pointer;
+  background: linear-gradient(180deg, #CB15DB 0%, #713BE4 100%);
+
 `;
