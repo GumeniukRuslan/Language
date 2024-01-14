@@ -19,30 +19,34 @@ const EnglishLevelsSection = ({openModal}) => {
     <>
       <StyledEnglishLevelMeeting>
         <Container>
-          <StyledEnglishLevelThemeTitle>Знакомство</StyledEnglishLevelThemeTitle>
-          <LevelsContainer>
-            <LevelsList>
-              <LevelItem><LevelBtn type="button" onClick={openModal}><NumberImg src={number1} alt="" /> </LevelBtn></LevelItem>
-              <LevelItem><LevelBtn type="button"><NumberImg src={number2} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
-              <LevelItem><LevelBtn type="button"><NumberImg src={number3} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
-              <LevelItem><LevelBtn type="button"><NumberImg src={number4} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
-              <LevelItem><LevelBtn type="button"><NumberImg src={number5} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
-            </LevelsList>
-            <Meetingimg src={meetingImg} alt="" />
-          </LevelsContainer>
+          <div style={{padding: '0 29px'}}>
+            <StyledEnglishLevelThemeTitle>Знакомство</StyledEnglishLevelThemeTitle>
+            <LevelsContainer>
+              <LevelsList>
+                <LevelItem><LevelBtn type="button" onClick={openModal}><NumberImg src={number1} alt="" /> </LevelBtn></LevelItem>
+                <LevelItem><LevelBtn type="button"><NumberImg src={number2} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
+                <LevelItem><LevelBtn type="button"><NumberImg src={number3} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
+                <LevelItem><LevelBtn type="button"><NumberImg src={number4} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
+                <LevelItem><LevelBtn type="button"><NumberImg src={number5} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
+              </LevelsList>
+              <Meetingimg src={meetingImg} alt="" />
+            </LevelsContainer>
+          </div>
         </Container>
       </StyledEnglishLevelMeeting>
 
       <StyledEnglishLevelTraveling>
         <Container>
-          <StyledEnglishLevelThemeTitle>Путешествие</StyledEnglishLevelThemeTitle>
-          <LevelsTravelList>
-            <LevelTravelItem><LevelBtn type="button"><NumberImg src={number6} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
-            <LevelTravelItem><LevelBtn type="button"><NumberImg src={number7} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
-            <LevelTravelItem><LevelBtn type="button"><NumberImg src={number8} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
-            <LevelTravelItem><LevelBtn type="button"><NumberImg src={number9} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
-            <LevelTravelItem><LevelBtn type="button"><NumberImg src={number10} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
-          </LevelsTravelList>
+          <div style={{padding: '0 29px'}}>
+            <StyledEnglishLevelThemeTitle>Путешествие</StyledEnglishLevelThemeTitle>
+            <LevelsTravelList>
+              <LevelTravelItem><LevelBtn type="button"><NumberImg src={number6} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
+              <LevelTravelItem><LevelBtn type="button"><NumberImg src={number7} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
+              <LevelTravelItem><LevelBtn type="button"><NumberImg src={number8} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
+              <LevelTravelItem><LevelBtn type="button"><NumberImg src={number9} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
+              <LevelTravelItem><LevelBtn type="button"><NumberImg src={number10} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelTravelItem>
+            </LevelsTravelList>
+          </div>
         </Container>
       </StyledEnglishLevelTraveling>
     </>

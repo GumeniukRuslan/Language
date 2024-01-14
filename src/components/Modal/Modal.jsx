@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChangeModalBtn, CloseBtn, GoogleBtn, InputContainer, LeftPart, ModalAddIndfo, ModalForm, ModalHeaders, RightPart, StyledClose, StyledInput, StyledModal, SubmitBtn } from "./Modal"
+import { ChangeModalBtn, CloseBtn, GoogleBtn, InputContainer, LeftPart, ModalAddIndfo, ModalForm, ModalHeaders, ModalOR, RightPart, StyledClose, StyledInput, StyledModal, SubmitBtn } from "./Modal"
 import ModalBackdrop from "../ModalBackdrop/ModalBackdrop.jsx";
 
 
@@ -70,7 +70,7 @@ const Modal = ({ closeModal }) => {
             <GoogleBtn>
               Использовать Google
             </GoogleBtn>
-            <p>OR</p>
+            <ModalOR>OR</ModalOR>
             <ModalForm>
               <InputContainer>
                 <label for="user_mail">

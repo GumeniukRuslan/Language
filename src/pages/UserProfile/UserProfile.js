@@ -4,7 +4,7 @@ import scoreBcg from '../../assets/images/ScoreBcg.png';
 
 export const ProfileHeader = styled.header`
   padding: 10px 14px;
-  max-width: 1600px;
+  max-width: 1510px;
   margin: 0 auto;
 `;
 export const ProfileSections = styled.section`
@@ -30,7 +30,7 @@ export const ProfileSectionHeader = styled.h2`
       return '517px'
     }
     if(props.isSecond){
-      return '500px'
+      return '517px'
     }
     if(props.isThird){
       return '298px'
@@ -90,7 +90,7 @@ export const ProfileRecordsList = styled.ul`
 export const ProfileRecordsListItem = styled.li`
   display: flex;
   gap: 30px;
-  align-items: flex-end;
+  align-items: center;
   font-family: NeueMachina;
   font-size: 24px;
   font-weight: 300;
@@ -147,7 +147,7 @@ export const FormRadioLabel = styled.label`
   font-size: 24px;
   font-weight: 300;
   line-height: 23px;
-  margin-left: ${props => props.last && `-45px`};
+  margin-left: ${props => props.last && `-46px`};
   &>input{
     width: 24px;
   }

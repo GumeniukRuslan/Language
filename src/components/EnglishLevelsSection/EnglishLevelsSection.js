@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import traveling from "../../assets/images/travelingimg.png"
+
 export const StyledEnglishLevelMeeting = styled.section`
-  padding: 65px 29px 20px 29px;
+  padding: 65px 0;
   background-image: url("IMAGE_URL"), linear-gradient(#eb01a5, #d13531);
   background: linear-gradient(180deg, rgba(255,189,246,1) 10%, rgba(144,237,255,1) 100%);
 `;
