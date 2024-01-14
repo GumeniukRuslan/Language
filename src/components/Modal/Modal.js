@@ -54,8 +54,14 @@ export const ModalAddIndfo = styled.p`
   line-height: 23px;
   margin-bottom: 30px;
 `;
-export const ModalOR = styled.p`
-
+export const ModalOR = styled.div`
+ display: flex;
+ gap: 25px;
+ justify-content: center;
+ align-items: center;
+`;
+export const StyledLine = styled.img`
+ max-width: 40%;
 `;
 export const ChangeModalBtn = styled.button`
   background: linear-gradient(171.92deg, #713BE4 6.22%, #E800C3 93.8%),

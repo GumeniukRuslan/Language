@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { ChangeModalBtn, CloseBtn, GoogleBtn, InputContainer, LeftPart, ModalAddIndfo, ModalForm, ModalHeaders, ModalOR, RightPart, StyledClose, StyledInput, StyledModal, SubmitBtn } from "./Modal"
+import { ChangeModalBtn, CloseBtn, GoogleBtn, InputContainer, LeftPart, ModalAddIndfo, ModalForm, ModalHeaders, ModalOR, RightPart, StyledClose, StyledInput, StyledLine, StyledModal, SubmitBtn } from "./Modal"
 import ModalBackdrop from "../ModalBackdrop/ModalBackdrop.jsx";
+import line from "../../assets/images/line.png";
 
 
 const Modal = ({ closeModal }) => {
@@ -30,7 +31,11 @@ const Modal = ({ closeModal }) => {
             <GoogleBtn>
               Использовать Google
             </GoogleBtn>
-            <p>OR</p>
+            <ModalOR>
+                <StyledLine src={line} alt="" />
+                <p>OR</p>
+                <StyledLine src={line} alt="" />
+              </ModalOR>
             <ModalForm>
               <InputContainer>
                 <label for="user_mail">
@@ -69,8 +74,13 @@ const Modal = ({ closeModal }) => {
             </ModalHeaders>
             <GoogleBtn>
               Использовать Google
-            </GoogleBtn>
-            <ModalOR>OR</ModalOR>
+              </GoogleBtn>
+              <ModalOR>
+                <StyledLine src={line} alt="" />
+                <p>OR</p>
+                <StyledLine src={line} alt="" />
+              </ModalOR>
+            
             <ModalForm>
               <InputContainer>
                 <label for="user_mail">
