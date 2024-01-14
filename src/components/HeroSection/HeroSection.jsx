@@ -1,4 +1,4 @@
-import { AdditionalHeroHeader, HeroHeader, HeroHeaderConrainer, HeroHeaderWord, StyledHeroSection, Triangle } from './HeroSection.js'
+import { AdditionalHeroHeader, HeroHeader, HeroHeaderConrainer, HeroHeaderWord, StyledHeroSection } from './HeroSection.js'
 
 const HeroSection = () => {
 

@@ -14,7 +14,7 @@ const UserMenu = () => {
       <UserMenuCloseBtn onClick={closeMenu} type="button"><UserMenuStyledClose/></UserMenuCloseBtn>
       <UserMenuName>Username</UserMenuName>
       <UserMenuList>
-        <UserMenuListItem><UserMenuListItemImg src={profile} alt="" /><UserMenuListLink href="/">Профиль</UserMenuListLink></UserMenuListItem>
+        <UserMenuListItem><UserMenuListItemImg src={profile} alt="" /><UserMenuListLink href="/profile">Профиль</UserMenuListLink></UserMenuListItem>
         <UserMenuListItem><UserMenuListItemImg src={profilEexit} alt="" /><UserMenuListLink href="/">Выйти из аккаунта</UserMenuListLink></UserMenuListItem>
         <UserMenuListItem><UserMenuListLink href="/">Главная страница</UserMenuListLink></UserMenuListItem>
       </UserMenuList>
