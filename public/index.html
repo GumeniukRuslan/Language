@@ -11,6 +11,13 @@
     <title>React App</title>
   </head>
   <body>
+    <script>
+      if (sessionStorage.redirect) {
+        history.replaceState({}, "", sessionStorage.redirect);
+        delete sessionStorage.redirect;
+      }
+    </script>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
