@@ -5,7 +5,7 @@ const LangItem = () => {
 
   return (
     <>
-      <StyledLangItem href="Language/english">
+      <StyledLangItem href="/english">
       </StyledLangItem>
     </>
   )
