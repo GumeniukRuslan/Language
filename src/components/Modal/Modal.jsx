@@ -2,11 +2,26 @@ import { useState } from "react";
 import { ChangeModalBtn, CloseBtn, GoogleBtn, InputContainer, LeftPart, ModalAddIndfo, ModalForm, ModalHeaders, ModalOR, RightPart, StyledClose, StyledInput, StyledLine, StyledModal, SubmitBtn } from "./Modal"
 import ModalBackdrop from "../ModalBackdrop/ModalBackdrop.jsx";
 import line from "../../assets/images/line.png";
+import toast from "react-hot-toast";
 
 
 const Modal = ({ closeModal }) => {
   
   const [changeModal, setChangeModal] = useState(true);
+
+  function access(e) {
+    e.preventDefault();
+
+    if (e.target.elements.user_mail.value !== "nastia@gmail.com") {
+      return toast.error("Неправильно введенный имейл")
+    }
+    if (e.target.elements.user_password.value !== "123456") {
+      return toast.error("Неправильно введенный пароль")
+    }
+    closeModal();
+    localStorage.setItem("languageAccess", true);
+    return toast.success("Добро пожаловать!")
+  }
 
   return (
     <>
@@ -36,18 +51,18 @@ const Modal = ({ closeModal }) => {
                 <p>OR</p>
                 <StyledLine src={line} alt="" />
               </ModalOR>
-            <ModalForm>
+            <ModalForm onSubmit={access}>
               <InputContainer>
                 <label for="user_mail">
                  E-mail
                 </label>
-                <StyledInput  id="user_mail" type="text" name="user_mail"/>
+                <StyledInput  id="user_mail" type="email" name="user_mail"/>
               </InputContainer>
               <InputContainer>
                 <label for="user_password">
               Пароль
               </label>
-              <StyledInput id="user_password" type="text" name="user_password" />
+              <StyledInput id="user_password" type="password" name="user_password" />
               </InputContainer>
               
               <SubmitBtn type="submit">Войти</SubmitBtn>

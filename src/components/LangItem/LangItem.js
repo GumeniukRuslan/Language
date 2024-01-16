@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledLangItem = styled.div`
+export const StyledLangItem = styled.a`
   display: inline-block;
   width: 357px;
   height: 353px;

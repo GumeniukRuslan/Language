@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 import traveling from "../../assets/images/travelingimg.png"
+import meetingImg from "../../assets/images/Фон1_иллюстрация.png"
 
 export const StyledEnglishLevelMeeting = styled.section`
-  padding: 65px 0;
-  background-image: url("IMAGE_URL"), linear-gradient(#eb01a5, #d13531);
-  background: linear-gradient(180deg, rgba(255,189,246,1) 10%, rgba(144,237,255,1) 100%);
+  padding: 65px 0 93px;
+  background: url(${meetingImg}), linear-gradient(180deg, rgba(255,189,246,1) 10%, rgba(144,237,255,1) 100%);
+  background-size: 50% contain;
+  background-position: right 10% bottom; 
+  background-repeat: no-repeat;
 `;
 
 export const StyledEnglishLevelThemeTitle = styled.h2`
@@ -66,7 +69,7 @@ export const LockImg = styled.img`
 `;
 // ----------------------------------------------------------------
 export const StyledEnglishLevelTraveling = styled.section`
-  padding: 20px 29px 0px 29px;
+  padding: 20px 29px 65px 29px;
   background: url(${traveling}), linear-gradient(180deg, rgba(144,237,255,1) 10%, rgba(161,32,195,1) 100%);
   background-size: contain;
   background-position: center;
@@ -82,7 +85,7 @@ export const LevelsTravelList = styled.ul`
   flex-direction: column;
   gap: 15px;
   padding: 0;
-  margin: 0;
+  margin-bottom: 60px;
 `;
 
 export const LevelTravelItem = styled.li`

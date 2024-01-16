@@ -3,7 +3,7 @@ import rightArrow from "../../../assets/images/RightArrow.png"
 import leftArrow from "../../../assets/images/LeftArrow.png"
 import videoFirstLevel from "../../../assets/videos/firstLevel.mp4"
 
-const ThirdTask = ({closeModal}) => {
+const ThirdTask = ({closeModal, handleRightClick, handleLeftClick}) => {
   
   return (
     <VideoLevelModal>
@@ -23,8 +23,8 @@ const ThirdTask = ({closeModal}) => {
         <VideoTaskFormSubmit type="submit">Отправить</VideoTaskFormSubmit>
       </VideoTaskForm>
       
-      <LeftBtn type="button"><LeftBtnImg src={leftArrow} alt="" /></LeftBtn>
-      <RightBtn type="button"><RightBtnImg src={rightArrow} alt="" /></RightBtn>
+      <LeftBtn onClick={handleLeftClick} type="button"><LeftBtnImg src={leftArrow} alt="" /></LeftBtn>
+      <RightBtn onClick={handleRightClick} type="button"><RightBtnImg src={rightArrow} alt="" /></RightBtn>
     </VideoLevelModal>
   )
 }

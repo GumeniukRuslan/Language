@@ -3,7 +3,7 @@ import { CloseTaskBtn, StyledTaskClose, LeftBtn, LeftBtnImg, TranslationLevelMod
 import leftArrow from "../../../assets/images/LeftArrow.png"
 
 
-const FourthTask = ({closeModal}) => {
+const FourthTask = ({closeModal, handleLeftClick}) => {
   
   return (
     <TranslationLevelModal>
@@ -20,7 +20,7 @@ const FourthTask = ({closeModal}) => {
         <TranslationTaskFormSubmit type="submit">Отправить</TranslationTaskFormSubmit>
       </TranslationTaskForm>
       
-      <LeftBtn type="button"><LeftBtnImg src={leftArrow} alt="" /></LeftBtn>
+      <LeftBtn onClick={handleLeftClick} type="button"><LeftBtnImg src={leftArrow} alt="" /></LeftBtn>
     </TranslationLevelModal>
   )
 }

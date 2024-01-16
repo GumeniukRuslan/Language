@@ -34,9 +34,9 @@ const UserProfile = () => {
                   <p>Загрузить фото</p>
                 </ProfilePhotoGag>
                 {/* <img src="" alt="" /> */}
-                <ProfileUserName>Username</ProfileUserName>
+                <ProfileUserName>Nastya</ProfileUserName>
               </div>
-              <ProfileUserEmail>mail@gmail.com</ProfileUserEmail>
+              <ProfileUserEmail>nastia@gmail.com</ProfileUserEmail>
           </ProfileSections>
 
           <ProfileSections isSecond> 

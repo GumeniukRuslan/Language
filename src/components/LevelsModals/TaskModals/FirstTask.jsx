@@ -1,7 +1,7 @@
 import { CloseTaskBtn, StyledTaskClose, VocabularyLevelModal, VocabularyTaskName, VocabularyList, VocabularyItem, RightBtn, RightBtnImg } from "../LevelsModals.js";
 import rightArrow from "../../../assets/images/RightArrow.png"
 
-const FirstTask = ({closeModal}) => {
+const FirstTask = ({closeModal, handleRightClick}) => {
   
   return (
     <VocabularyLevelModal>
@@ -14,7 +14,7 @@ const FirstTask = ({closeModal}) => {
         <VocabularyItem>He/she/it - он/она/оно</VocabularyItem>
         <VocabularyItem>He is Alex - его зовут Алекс</VocabularyItem>
       </VocabularyList>
-      <RightBtn type="button"><RightBtnImg src={rightArrow} alt="" /></RightBtn>
+      <RightBtn onClick={handleRightClick} type="button"><RightBtnImg src={rightArrow} alt="" /></RightBtn>
     </VocabularyLevelModal>
   )
 }

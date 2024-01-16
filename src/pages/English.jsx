@@ -6,6 +6,8 @@ import LevelsModals from "../components/LevelsModals/LevelsModals.jsx";
 
 const English = () => {
 
+  const [currentModal, setCurrentModal] = useState(0);
+
   const [showModal, setShowModal] = useState(false);
 
   function openModal() { 
@@ -31,8 +33,9 @@ const English = () => {
     <>
       <LanguageHeader />
       <main>
-          <EnglishLevelsSection openModal={openModal} />
-        {showModal && <LevelsModals closeModal={closeModal} />}
+        <EnglishLevelsSection openModal={openModal} />
+        
+        {showModal && <LevelsModals currentModal={currentModal} setCurrentModal={setCurrentModal} closeModal={closeModal} />}
       </main>
     </>
     

@@ -8,6 +8,10 @@ const UserMenu = () => {
     const menu = document.querySelector('#userMenu')
     menu.style.transform = "translateX(-100%)";
   }
+
+  function exit() {
+    localStorage.removeItem("languageAccess");
+  }
   
   return (
     <StyledUserMenu id='userMenu'>
@@ -15,7 +19,7 @@ const UserMenu = () => {
       <UserMenuName>Username</UserMenuName>
       <UserMenuList>
         <UserMenuListItem><UserMenuListItemImg src={profile} alt="" /><UserMenuListLink href="/profile">Профиль</UserMenuListLink></UserMenuListItem>
-        <UserMenuListItem><UserMenuListItemImg src={profilEexit} alt="" /><UserMenuListLink href="/">Выйти из аккаунта</UserMenuListLink></UserMenuListItem>
+        <UserMenuListItem><UserMenuListItemImg src={profilEexit} alt="" /><UserMenuListLink onClick={exit} href="/">Выйти из аккаунта</UserMenuListLink></UserMenuListItem>
         <UserMenuListItem><UserMenuListLink href="/">Главная страница</UserMenuListLink></UserMenuListItem>
       </UserMenuList>
     </StyledUserMenu>

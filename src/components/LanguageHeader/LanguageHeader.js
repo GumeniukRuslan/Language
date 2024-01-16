@@ -9,20 +9,16 @@ export const StyledLanguageHeader = styled.header`
   justify-content: space-between;
 `;
 
-export const StyledLanguageOutBtn = styled.button`
-  background: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+export const ScoreCounter = styled.p`
+  color: #713BE4;
+
   font-family: NeueMachina;
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 31px;
-  color: white;
-  cursor: pointer;
-  padding: 0;
-  margin-left: auto;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 39px;
+
+
+  
 `
 export const StyledLanguageMenuBtn = styled.button`
   background: none;

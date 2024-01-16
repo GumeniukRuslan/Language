@@ -1,10 +1,12 @@
 import out from '../../assets/icons/Out.svg'
 import menu from '../../assets/icons/Menu.svg'
 import flag from '../../assets/images/flag.jpg'
-import { Flag, FlagContainer, LanguageContainer, LanguageName, StyledLanguageHeader, StyledLanguageMenuBtn, StyledLanguageOutBtn, UserName } from './LanguageHeader.js'
+import { Flag, FlagContainer, LanguageContainer, LanguageName, ScoreCounter, StyledLanguageHeader, StyledLanguageMenuBtn, StyledLanguageOutBtn, UserName } from './LanguageHeader.js'
 import UserMenu from '../UserMenu/UserMenu.jsx'
+import { useLocation } from 'react-router-dom'
 
 const LanguageHeader = () => {
+  const location = useLocation();
 
   function openMenu() {
     const menu = document.querySelector('#userMenu')
@@ -17,13 +19,15 @@ const LanguageHeader = () => {
       <StyledLanguageHeader>
         <LanguageContainer>
           <StyledLanguageMenuBtn onClick={openMenu} type="button"> <img src={menu} alt="" /></StyledLanguageMenuBtn>
-          <FlagContainer>
-            <Flag src={flag} alt="" />
-            <LanguageName>English language</LanguageName>
-          </FlagContainer>
+          {location.pathname === '/english' &&
+            <FlagContainer>
+              <Flag src={flag} alt="" />
+              <LanguageName>English language</LanguageName>
+            </FlagContainer>}
+          
         </LanguageContainer>
-        <UserName>Username</UserName>
-        <StyledLanguageOutBtn  type="button"> <img src={out} alt="" /></StyledLanguageOutBtn>
+        <UserName>Nastya</UserName>
+        <ScoreCounter>0</ScoreCounter>
       </StyledLanguageHeader>
     </>
   )
