@@ -10,9 +10,9 @@ export const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/english" element={<English />}/>
-        <Route path="/profile" element={<UserProfile />}/>
+        <Route path="/Language" element={<Home />}/>
+        <Route path="/Language/english" element={<English />}/>
+        <Route path="/Language/profile" element={<UserProfile />}/>
         <Route path="*" element={<Home/>}/>
       </Routes>
       <Toaster position="top-right" toastOptions={{duration: 2000}} />
