@@ -34,7 +34,6 @@ const English = () => {
       <LanguageHeader />
       <main>
         <EnglishLevelsSection openModal={openModal} />
-        
         {showModal && <LevelsModals currentModal={currentModal} setCurrentModal={setCurrentModal} closeModal={closeModal} />}
       </main>
     </>

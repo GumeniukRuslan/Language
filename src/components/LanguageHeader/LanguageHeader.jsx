@@ -1,4 +1,4 @@
-import out from '../../assets/icons/Out.svg'
+
 import menu from '../../assets/icons/Menu.svg'
 import flag from '../../assets/images/flag.jpg'
 import { Flag, FlagContainer, LanguageContainer, LanguageName, ScoreCounter, StyledLanguageHeader, StyledLanguageMenuBtn, StyledLanguageOutBtn, UserName } from './LanguageHeader.js'
@@ -19,7 +19,7 @@ const LanguageHeader = () => {
       <StyledLanguageHeader>
         <LanguageContainer>
           <StyledLanguageMenuBtn onClick={openMenu} type="button"> <img src={menu} alt="" /></StyledLanguageMenuBtn>
-          {location.pathname === '/english' &&
+          {location.pathname === '/Language/english' &&
             <FlagContainer>
               <Flag src={flag} alt="" />
               <LanguageName>English language</LanguageName>
