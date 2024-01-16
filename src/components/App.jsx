@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { lazy } from "react";
-import English from "../pages/English";
-import UserProfile from "../pages/UserProfile/UserProfile.jsx";
 import { Toaster } from "react-hot-toast";
 
-const Home = lazy(() => import('../pages/Home'))
+const Home = lazy(() => import('../pages/Home.jsx'))
+const English = lazy(() => import('../pages/English.jsx'))
+const UserProfile = lazy(() => import('../pages/UserProfile/UserProfile.jsx'))
 
 export const App = () => {
   return (
