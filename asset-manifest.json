@@ -1,20 +1,22 @@
 {
   "files": {
     "main.css": "/Language/static/css/main.19829b90.css",
-    "main.js": "/Language/static/js/main.8a0d0681.js",
-    "static/css/714.1ae85162.chunk.css": "/Language/static/css/714.1ae85162.chunk.css",
-    "static/js/714.6abc4d62.chunk.js": "/Language/static/js/714.6abc4d62.chunk.js",
-    "static/js/369.20fa0737.chunk.js": "/Language/static/js/369.20fa0737.chunk.js",
+    "main.js": "/Language/static/js/main.5581014e.js",
+    "static/css/45.8b42ea2e.chunk.css": "/Language/static/css/45.8b42ea2e.chunk.css",
+    "static/js/45.fd50ae9c.chunk.js": "/Language/static/js/45.fd50ae9c.chunk.js",
+    "static/js/369.ba52b58b.chunk.js": "/Language/static/js/369.ba52b58b.chunk.js",
     "static/media/travelingimg.png": "/Language/static/media/travelingimg.d7805b6b2e47ec8f9dd3.png",
     "static/media/Polygon2.png": "/Language/static/media/Polygon2.460a5332d1a853bb8956.png",
     "static/media/Фон1_иллюстрация.png": "/Language/static/media/Фон1_иллюстрация.515b08797370105f281c.png",
     "static/media/firstLevel.mp4": "/Language/static/media/firstLevel.1d3d2b6e75f8642ac25f.mp4",
+    "static/media/TriangleMobile.png": "/Language/static/media/TriangleMobile.15795baff55d7c70d544.png",
     "static/media/Level1FirstModal.png": "/Language/static/media/Level1FirstModal.77f309e4168368e42ddd.png",
     "static/media/цифра5.png": "/Language/static/media/цифра5.1f3df20e6b56d11d93f6.png",
     "static/media/Цифра1.png": "/Language/static/media/Цифра1.60e03634734f8e554a7f.png",
     "static/media/цифра2.png": "/Language/static/media/цифра2.1951bd6b91fec588d176.png",
     "static/media/цифра4.png": "/Language/static/media/цифра4.5232780db8a470e82313.png",
     "static/media/FourthTaskBcg.png": "/Language/static/media/FourthTaskBcg.b4f413432a6fc22cb786.png",
+    "static/media/Фон1_иллюстрацияMobile.png": "/Language/static/media/Фон1_иллюстрацияMobile.4b32004b178c1d3df664.png",
     "static/media/NeueMachina-Regular.otf": "/Language/static/media/NeueMachina-Regular.6c408aeebce449ab7d74.otf",
     "static/media/NeueMachina-Ultrabold.otf": "/Language/static/media/NeueMachina-Ultrabold.07d4eef9a71d90303bbf.otf",
     "static/media/NeueMachina-Light.otf": "/Language/static/media/NeueMachina-Light.e1fb3b2574d18010b9ff.otf",
@@ -23,6 +25,7 @@
     "static/media/Цифра6.png": "/Language/static/media/Цифра6.9837291da4d01ccf3274.png",
     "static/media/Цифра7.png": "/Language/static/media/Цифра7.0f50b63f0a991c3398c0.png",
     "static/media/Цифра8.png": "/Language/static/media/Цифра8.84d763b8d363f056f71a.png",
+    "static/media/videoBcgMobile.png": "/Language/static/media/videoBcgMobile.16ad08934ded15ddf41a.png",
     "static/media/Цифра9.png": "/Language/static/media/Цифра9.e386154b4aac98d6aa34.png",
     "static/media/SecondTaskRight.png": "/Language/static/media/SecondTaskRight.973cd1b113bae6283dd9.png",
     "static/media/цифра3.png": "/Language/static/media/цифра3.7ac5f2ecfd3bad3f591e.png",
@@ -33,13 +36,13 @@
     "static/media/Menu.svg": "/Language/static/media/Menu.0c42a9341ec1f4e7317821cbc50fd6b2.svg",
     "index.html": "/Language/index.html",
     "main.19829b90.css.map": "/Language/static/css/main.19829b90.css.map",
-    "main.8a0d0681.js.map": "/Language/static/js/main.8a0d0681.js.map",
-    "714.1ae85162.chunk.css.map": "/Language/static/css/714.1ae85162.chunk.css.map",
-    "714.6abc4d62.chunk.js.map": "/Language/static/js/714.6abc4d62.chunk.js.map",
-    "369.20fa0737.chunk.js.map": "/Language/static/js/369.20fa0737.chunk.js.map"
+    "main.5581014e.js.map": "/Language/static/js/main.5581014e.js.map",
+    "45.8b42ea2e.chunk.css.map": "/Language/static/css/45.8b42ea2e.chunk.css.map",
+    "45.fd50ae9c.chunk.js.map": "/Language/static/js/45.fd50ae9c.chunk.js.map",
+    "369.ba52b58b.chunk.js.map": "/Language/static/js/369.ba52b58b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19829b90.css",
-    "static/js/main.8a0d0681.js"
+    "static/js/main.5581014e.js"
   ]
 }
