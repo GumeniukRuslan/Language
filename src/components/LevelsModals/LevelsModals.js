@@ -254,7 +254,12 @@ export const StyledVideo = styled.video`
 export const VideoTaskForm = styled.form`
   display: flex;
   margin-top: 2px;
+  flex-direction: column;
   gap: 11px;
+  @media screen and (min-width: 1450px) {
+    flex-direction: row;
+  }
+
 `;
 export const VideoTaskFormInput = styled.input`
   border: 3px solid #BA9AFF;
@@ -269,6 +274,8 @@ export const VideoTaskFormInput = styled.input`
 `;
 export const VideoTaskFormSubmit = styled.button`
   border: none;
+  display: inline;
+  width: fit-content;
   border-radius: 24px;
   font-family: NeueMachina;
   font-size: 17px;
@@ -279,6 +286,10 @@ export const VideoTaskFormSubmit = styled.button`
   cursor: pointer;
   background: linear-gradient(180deg, #CB15DB 0%, #713BE4 100%);
   transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  @media screen and (max-width: 1449px) {
+    padding: 10px;
+    margin-left: auto;
+  }
   &:hover,
   &:focus{
     transform: translateY(10%);
@@ -339,7 +350,11 @@ export const TranslationTaskGoal = styled.p`
 export const TranslationTaskForm = styled.form`
   display: flex;
   margin-top: 2px;
+  flex-direction: column;
   gap: 11px;
+  @media screen and (min-width: 1450px) {
+    flex-direction: row;
+  }
 `;
 export const TranslationTaskFormInput = styled.input`
   border: 3px solid #BA9AFF;
@@ -363,6 +378,10 @@ export const TranslationTaskFormSubmit = styled.button`
   padding: 0px 10px;
   cursor: pointer;
   background: linear-gradient(180deg, #CB15DB 0%, #713BE4 100%);
+  @media screen and (max-width: 1449px) {
+    padding: 10px;
+    margin-left: auto;
+  }
   transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
   &:hover,
   &:focus{
