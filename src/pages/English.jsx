@@ -18,7 +18,6 @@ const English = () => {
 
   function closeModalOnEsc(e) {
     if (e.key === 'Escape') {
-      console.log(e.key)
       window.removeEventListener('keydown', closeModal)
       document.body.style.overflowY = 'auto';
       return setShowModal(false)

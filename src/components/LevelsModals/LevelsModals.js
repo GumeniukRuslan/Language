@@ -3,6 +3,7 @@ import firstModal from '../../assets/images/Level1FirstModal.png'
 import secondModalLeft from '../../assets/images/SecondTaskLeft.png'
 import secondModalRight from '../../assets/images/SecondTaskRight.png'
 import videoBcg from '../../assets/images/VideoTaskBcg.png'
+import videoBcgMobile from '../../assets/images/videoBcgMobile.png'
 import fourthTaskBcg from '../../assets/images/FourthTaskBcg.png'
 import { IoMdClose } from 'react-icons/io';
 
@@ -55,9 +56,13 @@ export const VocabularyLevelModal = styled.div`
   background-color: white;
   border: 9px solid #C379F5;
   border-radius: 8px;
-  padding: 20px;
-  min-width: 916px;
-  min-height: 558px;
+  padding: 20px 20px 100px;
+ 
+  @media screen and (min-width: 1450px) {
+    min-width: 916px;
+    min-height: 558px;
+    padding: 20px;
+  }
 `;
 
 export const VocabularyTaskName = styled.h2`
@@ -70,6 +75,7 @@ export const VocabularyTaskName = styled.h2`
   margin: 0;
   margin-bottom: 80px;
 
+  
 `;
 export const VocabularyList = styled.ul`
   font-family: NeueMachina;
@@ -78,11 +84,15 @@ export const VocabularyList = styled.ul`
   line-height: 31px;
   color: #713BE4;
   display: inline-flex;
-  margin-left: 25%;
+  align-items: flex-start;
   flex-direction: column;
-  align-items: baseline;
+  
   gap: 24px;
   list-style: none;
+  @media screen and (min-width: 1450px) {
+    align-items: baseline;
+     margin-left: 25%;
+  }
 `;
 export const VocabularyItem = styled.li`
   font-family: NeueMachina;
@@ -95,6 +105,10 @@ export const VocabularyItem = styled.li`
   background-color: #FFFFFFA8;
   color: black;
   max-width: fit-content;
+  @media screen and (min-width: 1450px) {
+    align-items: baseline;
+     margin-left: 25%;
+  }
 `;
 
 //SecondTask -------------------------------------------
@@ -103,9 +117,9 @@ export const MatchLevelModal = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  width: 916px;
-  height: 558px;
+  padding: 40px 20px 100px;
+  min-height: 80%;
+  min-width: 80%;
   position: relative;
   background: url(${secondModalLeft}), url(${secondModalRight});
   background-position: left bottom, right bottom;
@@ -113,6 +127,13 @@ export const MatchLevelModal = styled.div`
   background-color: white;
   border: 9px solid #C379F5;
   border-radius: 8px;
+  @media screen and (max-width: 800px) {
+    background-size: 154px;
+  }
+  @media screen and (min-width: 1450px) {
+    min-width: 916px;
+    min-height: 558px;
+  }
 `;
 
 export const MatchTaskName = styled.h2`
@@ -123,13 +144,17 @@ export const MatchTaskName = styled.h2`
   color: #713BE4;
   text-transform: uppercase;
   margin: 0;
+  
 `;
 export const MatchContainer = styled.div`
   display: flex;
   margin-top: 60px;
   justify-content: space-around;
   width: 100%;
-  gap: 138px;
+  gap: 58px;
+  @media screen and (min-width: 1450px) {
+    gap: 138px;
+  }
 `;
 export const MatchList = styled.ul`
   display: flex;
@@ -156,16 +181,25 @@ export const MatchItem = styled.li`
 //ThirdTask --------------------------------------------------------]
 
 export const VideoLevelModal = styled.div`
-  padding: 20px;
-  width: 916px;
-  height: 558px;
+  padding: 10px;
+  width: 90%;
+  height: 90%;
   position: relative;
-  background: url(${videoBcg});
-  background-position: right bottom;
+  background: url(${videoBcgMobile});
+  background-position: top right;
   background-repeat: no-repeat;
   background-color: #B0C7E2;
   border: 9px solid #C379F5;
   border-radius: 8px;
+  @media screen and (min-width: 1450px) {
+    width: 916px;
+    height: 558px;
+    padding: 20px;
+    background: url(${videoBcg});
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-color: #B0C7E2;
+  }
 `;
 export const VideoTaskName = styled.h2`
   font-family: NeueMachina;
@@ -182,7 +216,13 @@ export const VideoContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-left: 477px;
+  
+  @media screen and (max-width: 1449px) {
+    align-items: flex-end;
+  }
+  @media screen and (min-width: 1450px) {
+    margin-left: 477px;
+  }
 `;
 export const VideoTaskDescription = styled.h3`
   font-family: NeueMachina;
@@ -190,6 +230,10 @@ export const VideoTaskDescription = styled.h3`
   font-weight: 300;
   line-height: 17px;
   color: #713BE4;
+  display: none;
+  @media screen and (min-width: 1450px) {
+    display: inline;
+  }
 `;
 export const StyledVideo = styled.video`
   width: 318px;
@@ -233,6 +277,7 @@ export const TranslationLevelModal = styled.div`
   width: 916px;
   height: 558px;
   position: relative;
+  
   background: url(${fourthTaskBcg}), conic-gradient(from 180deg at 50% 50%, #FEBBBA 0deg, #3BC6E4 264.52deg, #AE8BF1 306.91deg, #FEBBBA 360deg), linear-gradient(0deg, #C379F5, #C379F5);
 ;
   background-position: center bottom;
@@ -240,6 +285,10 @@ export const TranslationLevelModal = styled.div`
   background-color: #B0C7E2;
   border: 9px solid #C379F5;
   border-radius: 8px;
+  @media screen and (max-width: 1000px) {
+    max-width: 90%;
+    max-height: 90%;
+  }
 `;
 
 export const TranslationTaskName = styled.h2`

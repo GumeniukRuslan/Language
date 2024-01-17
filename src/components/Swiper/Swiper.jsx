@@ -34,11 +34,11 @@ const LangSwiper = () => {
             },
           }}
         >
-          <SwiperSlide><LangItem flag={british}/></SwiperSlide>
+          <SwiperSlide><LangItem language='english' flag={british}/></SwiperSlide>
           <SwiperSlide><LangItem flag={german}/></SwiperSlide>
           <SwiperSlide><LangItem flag={italian}/></SwiperSlide>
           <SwiperSlide><LangItem flag={french}/></SwiperSlide>
-          <SwiperSlide><LangItem flag={british}/></SwiperSlide>
+          <SwiperSlide><LangItem language='english' flag={british}/></SwiperSlide>
           <SwiperSlide><LangItem flag={german}/></SwiperSlide>
           <SwiperSlide><LangItem flag={italian}/></SwiperSlide>
           <SwiperSlide><LangItem flag={french}/></SwiperSlide>
