@@ -30,6 +30,11 @@ export const RightBtn = styled.button`
   cursor: pointer;
   border: none;
   position: absolute;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover,
+  &:focus{
+    transform: translateY(-10%);
+  }
 `
 export const RightBtnImg = styled.img`
   width: 76px;
@@ -41,6 +46,11 @@ export const LeftBtn = styled.button`
   cursor: pointer;
   border: none;
   position: absolute;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover,
+  &:focus{
+    transform: translateY(-10%);
+  }
 `
 export const LeftBtnImg = styled.img`
   width: 76px;
@@ -268,6 +278,11 @@ export const VideoTaskFormSubmit = styled.button`
   padding: 0px 10px;
   cursor: pointer;
   background: linear-gradient(180deg, #CB15DB 0%, #713BE4 100%);
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover,
+  &:focus{
+    transform: translateY(10%);
+  }
 `;
 
 // FourthTask-----------------------------------------------------------
@@ -348,4 +363,9 @@ export const TranslationTaskFormSubmit = styled.button`
   padding: 0px 10px;
   cursor: pointer;
   background: linear-gradient(180deg, #CB15DB 0%, #713BE4 100%);
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover,
+  &:focus{
+    transform: translateY(10%);
+  }
 `;

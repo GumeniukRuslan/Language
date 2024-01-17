@@ -36,6 +36,11 @@ export const StyledLanguageMenuBtn = styled.button`
   color: white;
   cursor: pointer;
   padding: 0;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover,
+  &:focus{
+    box-shadow: 0px 0px 56px -14px rgba(0,0,0,1);
+  }
   &>img{
     max-width: 32px;
     @media screen and (min-width: 1450px) {

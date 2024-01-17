@@ -20,6 +20,7 @@ export const CloseBtn = styled.button`
   cursor: pointer;
   border: none;
   position: absolute;
+  
 `;
 export const StyledClose = styled(IoMdClose)`
   fill: #713BE4;
@@ -93,6 +94,11 @@ export const ChangeModalBtn = styled.button`
   width: 100%;
   cursor: pointer;
   padding: 5px 0px;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover,
+  &:focus{
+    transform: translateY(10%);
+  }
 
 `;
 export const GoogleBtn = styled.button`
@@ -107,6 +113,11 @@ export const GoogleBtn = styled.button`
   cursor: pointer;
   padding: 5px 0px;
   margin-bottom: 10px;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover,
+  &:focus{
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,1);
+  }
   @media screen and (min-width: 1450px) {
     margin-bottom: 40px;
   }
@@ -148,7 +159,11 @@ export const SubmitBtn = styled.button`
   width: 100%;
   cursor: pointer;
   padding: 5px 0px;
- 
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover,
+  &:focus{
+    transform: translateY(10%);
+  }
   
 `;
 

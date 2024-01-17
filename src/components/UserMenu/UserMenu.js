@@ -56,6 +56,7 @@ export const UserMenuListItem = styled.li`
   &:nth-child(3n){
     margin-left: 38px;
   }
+  
 `;
 export const UserMenuListItemImg = styled.img`
   width: 32px;
@@ -64,4 +65,9 @@ export const UserMenuListItemImg = styled.img`
 export const UserMenuListLink = styled.a`
   color: black;
   text-decoration: none;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover,
+  &:focus{
+    color: #713BE4;
+  }
 `;

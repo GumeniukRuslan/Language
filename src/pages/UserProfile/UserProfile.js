@@ -257,5 +257,9 @@ export const ProfileFormSubmit = styled.button`
     padding: 11px 0;
     bottom: 10px;
   }
-
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover,
+  &:focus{
+    background-color: #F9F1F5;
+  }
 `;
