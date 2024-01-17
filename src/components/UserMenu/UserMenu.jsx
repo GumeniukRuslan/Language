@@ -16,7 +16,7 @@ const UserMenu = () => {
   return (
     <StyledUserMenu id='userMenu'>
       <UserMenuCloseBtn onClick={closeMenu} type="button"><UserMenuStyledClose/></UserMenuCloseBtn>
-      <UserMenuName>Username</UserMenuName>
+      <UserMenuName>Nastya</UserMenuName>
       <UserMenuList>
         <UserMenuListItem><UserMenuListItemImg src={profile} alt="" /><UserMenuListLink href="/Language/#/profile">Профиль</UserMenuListLink></UserMenuListItem>
         <UserMenuListItem><UserMenuListItemImg src={profilEexit} alt="" /><UserMenuListLink onClick={exit} href="/Language">Выйти из аккаунта</UserMenuListLink></UserMenuListItem>

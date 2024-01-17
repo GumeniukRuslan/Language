@@ -6,9 +6,11 @@ import UserMenu from '../UserMenu/UserMenu.jsx'
 import { useLocation } from 'react-router-dom'
 
 const LanguageHeader = () => {
+
   const location = useLocation();
 
   function openMenu() {
+    console.log(location)
     const menu = document.querySelector('#userMenu')
     menu.style.transform = "translateX(0%)";
   }
@@ -19,7 +21,7 @@ const LanguageHeader = () => {
       <StyledLanguageHeader>
         <LanguageContainer>
           <StyledLanguageMenuBtn onClick={openMenu} type="button"> <img src={menu} alt="" /></StyledLanguageMenuBtn>
-          {location.pathname === '/Language/english' &&
+          {location.pathname === '/english' &&
             <FlagContainer>
               <Flag src={flag} alt="" />
               <LanguageName>English language</LanguageName>

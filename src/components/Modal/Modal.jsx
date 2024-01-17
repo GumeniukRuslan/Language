@@ -53,13 +53,13 @@ const Modal = ({ closeModal }) => {
               </ModalOR>
             <ModalForm onSubmit={access}>
               <InputContainer>
-                <label for="user_mail">
+                <label htmlFor="user_mail">
                  E-mail
                 </label>
                 <StyledInput  id="user_mail" type="email" name="user_mail"/>
               </InputContainer>
               <InputContainer>
-                <label for="user_password">
+                <label htmlFor="user_password">
               Пароль
               </label>
               <StyledInput id="user_password" type="password" name="user_password" />
@@ -98,19 +98,19 @@ const Modal = ({ closeModal }) => {
             
             <ModalForm>
               <InputContainer>
-                <label for="user_mail">
+                <label htmlFor="user_mail">
                  E-mail
                 </label>
                 <StyledInput  id="user_mail" type="text" name="user_mail"/>
               </InputContainer>
               <InputContainer>
-                <label for="user_name">
+                <label htmlFor="user_name">
                  Имя пользователя
                 </label>
                 <StyledInput  id="user_name" type="text" name="user_name"/>
               </InputContainer>
               <InputContainer>
-                <label for="user_password">
+                <label htmlFor="user_password">
               Пароль
               </label>
               <StyledInput id="user_password" type="text" name="user_password" />

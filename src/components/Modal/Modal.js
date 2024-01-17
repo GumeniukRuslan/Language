@@ -4,8 +4,14 @@ import { IoMdClose } from "react-icons/io";
 export const StyledModal = styled.div`
   background-color: white;
   display: flex;
+  flex-direction: column-reverse;
   border-radius: 8px;
   position: relative;
+  max-height: 95%;
+  @media screen and (min-width: 1450px) {
+    flex-direction: row;
+    max-height: 100%;
+  }
 `;
 export const CloseBtn = styled.button`
   background: none;
@@ -24,28 +30,39 @@ export const StyledClose = styled(IoMdClose)`
 
 export const LeftPart = styled.div`
   background: conic-gradient(from 180deg at 50% 50%, #713BE4 -52.87deg, rgba(254, 2, 229, 0) 188.35deg, #713BE4 307.13deg, rgba(254, 2, 229, 0) 548.35deg);
-  padding: 20px 15px;
+  padding: 10px 10px;
   width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  @media screen and (min-width: 1450px) {
+    padding: 20px 15px;
+  }
 `;
 export const RightPart = styled.div`
-  padding: 20px 15px;
+  padding: 10px 10px;
   width: 400px;
     display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-bottom: 50px;
+  
+  @media screen and (min-width: 1450px) {
+    padding: 20px 15px;
+    padding-bottom: 50px;
+  }
 `;
 export const ModalHeaders = styled.h2`
   font-family: NeueMachina;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 33px;
-  margin-bottom: 34px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 1450px) {
+    margin-bottom: 34px;
+     font-size: 24px;
+  }
 `;
 export const ModalAddIndfo = styled.p`
   font-family: NeueMachina;
@@ -76,6 +93,7 @@ export const ChangeModalBtn = styled.button`
   width: 100%;
   cursor: pointer;
   padding: 5px 0px;
+
 `;
 export const GoogleBtn = styled.button`
   background-color: #E7E7E7;
@@ -88,15 +106,22 @@ export const GoogleBtn = styled.button`
   width: 100%;
   cursor: pointer;
   padding: 5px 0px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 1450px) {
+    margin-bottom: 40px;
+  }
 `;
 export const ModalForm = styled.form`
-  margin-top: 97px;
+  margin-top: 0px;
   align-self: flex-start;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 10px;
   width: 100%;
+  @media screen and (min-width: 1450px) {
+    margin-top: 97px;
+    gap: 40px;
+  }
 `;
 export const InputContainer = styled.div`
   display: flex;
@@ -123,6 +148,7 @@ export const SubmitBtn = styled.button`
   width: 100%;
   cursor: pointer;
   padding: 5px 0px;
+ 
   
 `;
 

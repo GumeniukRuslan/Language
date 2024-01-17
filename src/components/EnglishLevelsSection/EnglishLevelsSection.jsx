@@ -1,4 +1,4 @@
-import { LevelBtn, LevelItem, LevelTravelItem, LevelsContainer, LevelsList, LevelsTravelList, LockImg, Meetingimg, NumberImg, StyledEnglishLevelMeeting, StyledEnglishLevelThemeTitle, StyledEnglishLevelTraveling } from "./EnglishLevelsSection"
+import { LevelBtn, LevelItem, LevelTravelItem, LevelsList, LevelsTravelList, LockImg, Meetingimg, NumberImg, StyledEnglishLevelMeeting, StyledEnglishLevelThemeTitle, StyledEnglishLevelTraveling } from "./EnglishLevelsSection"
 import number1 from "../../assets/images/Цифра1.png"
 import number2 from "../../assets/images/цифра2.png"
 import number3 from "../../assets/images/цифра3.png"
@@ -22,7 +22,7 @@ const EnglishLevelsSection = ({openModal}) => {
         <Container>
           <div style={{padding: '0 29px'}}>
             <StyledEnglishLevelThemeTitle>Знакомство</StyledEnglishLevelThemeTitle>
-            <LevelsContainer>
+            <div>
               <LevelsList>
                 <LevelItem><LevelBtn type="button" onClick={openModal}><NumberImg src={number1} alt="" /> </LevelBtn></LevelItem>
                 <LevelItem><LevelBtn type="button"><NumberImg src={number2} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
@@ -30,7 +30,7 @@ const EnglishLevelsSection = ({openModal}) => {
                 <LevelItem><LevelBtn type="button"><NumberImg src={number4} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
                 <LevelItem><LevelBtn type="button"><NumberImg src={number5} alt="" /> <LockImg src={lock} alt="" /></LevelBtn></LevelItem>
               </LevelsList>
-            </LevelsContainer>
+            </div>
             <ProgressBar percent={35} />
           </div>
         </Container>

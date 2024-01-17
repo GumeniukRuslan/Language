@@ -24,6 +24,7 @@ useEffect(() => {
   
   function openModal() { 
     window.addEventListener('keydown', closeModalOnEsc)
+    document.body.style.overflowY = 'hidden';
     return setShowModal(true)
   }
 
@@ -31,12 +32,14 @@ useEffect(() => {
     if (e.key === 'Escape') {
       console.log(e.key)
       window.removeEventListener('keydown', closeModal)
+      document.body.style.overflowY = 'auto';
       return setShowModal(false)
     }
   }
 
   function closeModal() {
     window.removeEventListener('keydown', closeModal)
+    document.body.style.overflowY = 'auto';
     return setShowModal(false)
   }
 
